@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_first"
+    android:background="@color/textColor">
+
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/relative_second"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/cal"
+        android:id="@+id/logo_cal"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Number"
+        android:inputType="number"
+        android:layout_marginTop="30dp"
+        android:id="@+id/firsttxt"
+        android:layout_below="@id/logo_cal"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Second Number"
+        android:inputType="number"
+        android:layout_marginTop="5dp"
+        android:id="@+id/secondtxt"
+        android:layout_below="@id/firsttxt"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Answer is : "
+        android:inputType="number"
+        android:layout_marginTop="5dp"
+        android:id="@+id/answertxt"
+        android:layout_below="@id/secondtxt"
+        />
+
+
+</RelativeLayout>
+
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/textColor"
+android:layout_below="@id/relative_second"
+    android:padding="5dp"
+    android:layout_margin="20dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/plusbtn"
+        android:background="@color/Alive"
+        android:text="+"
+        android:textSize="50sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/minusbtn"
+        android:layout_toRightOf="@id/plusbtn"
+        android:background="@color/bg_start"
+        android:text="-"
+        android:textSize="50sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/mulbtn"
+        android:background="@color/bg_end"
+        android:text="*"
+        android:textSize="50sp"
+        android:layout_toRightOf="@id/minusbtn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/divbtn"
+        android:background="@color/Alive"
+        android:text="/"
+        android:textSize="50sp"
+        android:layout_toRightOf="@id/mulbtn"/>
+
+</RelativeLayout>
+
+
+ </RelativeLayout>

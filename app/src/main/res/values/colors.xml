@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_start">#659999</color>
+    <color name="bg_end">#f4791f</color>
+    <color name="bg_mid">#544a7d</color>
+    <color name="textColor">#FFFF</color>
+    <color name="Alive">#BD3F32</color>
+</resources>
